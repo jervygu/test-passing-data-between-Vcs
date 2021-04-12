@@ -31,14 +31,6 @@ class FirstVC: UIViewController, CanReceiveData {
         }
     }
     
-    @IBAction func paintBtn(_ sender: Any) {
-        if view.backgroundColor != .systemBlue {
-            view.backgroundColor = .systemBlue
-        } else if view.backgroundColor != .systemGreen {
-            view.backgroundColor = .systemGreen
-        }
-    }
-    
     func dataReceived(data: String) {
         messageLbl.text = data
     }
